@@ -1,0 +1,19 @@
+@use "@scss/abstract/index";
+
+.bg--cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-hero {
+  background: var(--color-theme-hero);
+}
+
+.bg-dark {
+  background: var(--color-theme-dark);
+}
+
+.bg-type {
+  background: var(--color-theme-type);
+}

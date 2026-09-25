@@ -1,0 +1,215 @@
+@use "@scss/abstract/index";
+
+.services-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 550px;
+  background-color: #1d1d1d;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+  @include index.minMedia(550px) {
+    background-color: rgba(0, 0, 0, 0.1);
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.25);
+      .find-btn {
+        border: 2px solid #fff;
+        color: #fff;
+        margin-top: auto;
+      }
+      .services-banner {
+        &:before {
+          background: rgba(0, 0, 0, 0);
+        }
+      }
+    }
+  }
+  .services-banner {
+    background-color: #eeeeee;
+    position: relative;
+    padding-top: 62%;
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background: rgba(0, 0, 0, 0);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 3;
+      @include index.minMedia(550px) {
+        background: rgba(0, 0, 0, 0.15);
+      }
+    }
+    .inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      overflow: hidden;
+      img {
+        height: 102%;
+        width: auto;
+      }
+    }
+  }
+  .services-prev {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    @include index.minMedia(800px) {
+      padding: 30px 20px;
+    }
+    @include index.minMedia(1100px) {
+      padding-left: 30px;
+    }
+    .content {
+      flex-grow: 1;
+      margin-bottom: 1.5rem;
+      height: auto;
+    }
+    p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      @include index.minMedia(550px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.services-list {
+  margin-bottom: 1.1rem;
+  padding-left: 0;
+  @include index.minMedia(800px) {
+    margin-bottom: 1.4rem;
+    padding-left: 25px;
+  }
+  li {
+    position: relative;
+    margin-top: 0.5rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: "\25CF"; /* Или "\25CF" */
+      color: #fff;
+      font-size: 1.2rem; /* Размер кружочка */
+      line-height: 1;
+      margin-right: 10px;
+      vertical-align: middle; /* Отличное выравнивание по центру строки */
+      @include index.minMedia(550px) {
+        width: 15px;
+        left: -25px;
+        margin-right: 10px;
+      }
+    }
+  }
+  span {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    padding-right: 0.3rem;
+  }
+}
+
+.tariff-list {
+  margin-bottom: 1.1rem;
+  padding-left: 0;
+  @include index.minMedia(800px) {
+    margin-bottom: 1.4rem;
+    padding-left: 20px;
+  }
+  @include index.minMedia(1100px) {
+    padding-left: 25px;
+  }
+  li {
+    position: relative;
+    margin-top: 0.5rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: "\25CF"; /* Или "\25CF" */
+      color: #fff;
+      font-size: 1.2rem; /* Размер кружочка */
+      line-height: 1;
+      margin-right: 10px;
+      vertical-align: middle; /* Отличное выравнивание по центру строки */
+      @include index.minMedia(550px) {
+        width: 15px;
+        left: -25px;
+        margin-right: 10px;
+      }
+    }
+  }
+  span {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    padding-right: 0.3rem;
+  }
+}
+
+.number-list {
+  margin-bottom: 1.1rem;
+  padding-left: 0;
+  /* 2. ИНИЦИАЛИЗИРУЕМ счетчик (сбрасываем его в 0 перед началом списка) */
+  counter-reset: my-item-counter;
+  @include index.minMedia(800px) {
+    margin-bottom: 1.4rem;
+    padding-left: 25px;
+  }
+  li {
+    position: relative;
+    /* 3. УВЕЛИЧИВАЕМ счетчик на 1 для каждого элемента li */
+    counter-increment: my-item-counter;
+    margin-top: 0.5rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      /* 4. ВЫВОДИМ значение счетчика в псевдоэлемент */
+      content: counter(my-item-counter) ". ";
+      color: #fff;
+      font-size: 1.2rem; /* Размер кружочка */
+      line-height: 1;
+      margin-right: 10px;
+      vertical-align: middle; /* Отличное выравнивание по центру строки */
+      @include index.minMedia(550px) {
+        width: 15px;
+        left: -25px;
+        margin-right: 10px;
+      }
+    }
+  }
+  span {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    padding-right: 0.3rem;
+  }
+}
+
+.card-tariff {
+  padding: 1rem 1.5rem 1rem 0;
+  @include index.minMedia(550px) {
+    padding: 1rem 1.5rem;
+  }
+  .titlecard {
+    display: block;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.4rem;
+    padding-top: 0.7rem;
+  }
+}

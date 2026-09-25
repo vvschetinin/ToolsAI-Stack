@@ -1,0 +1,11 @@
+@use "@scss/abstract/index";
+
+.contact-description {
+  padding-top: 3.75rem;
+  @include index.minMedia(800px) {
+    padding-top: 2rem;
+  }
+  @include index.minMedia(1400px) {
+    padding-top: 0;
+  }
+}

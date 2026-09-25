@@ -1,0 +1,48 @@
+@use "@scss/abstract/index";
+
+.deco-line {
+  position: relative;
+  padding-bottom: 1.2rem;
+  margin-bottom: 30px;
+  @include index.minMedia(550px) {
+    margin-bottom: 2rem;
+  }
+  @include index.minMedia(800px) {
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #18e591;
+    @include index.minMedia(800px) {
+      width: 50px;
+    }
+  }
+  &--center {
+    @extend .deco-line;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 50px;
+      height: 2px;
+      background: #18e591;
+      left: calc(50% - 25px);
+      transform: translate(-50%);
+      @include index.minMedia(800px) {
+        width: 75px;
+      }
+    }
+  }
+}
+
+.line-separation {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 3rem;
+}

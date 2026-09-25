@@ -1,0 +1,129 @@
+@use "@scss/abstract/index";
+
+.workgrid {
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  top: 0;
+  animation: d 0.6s 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+.mywork-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @include index.minMedia(550px) {
+    width: 50%;
+  }
+  @include index.minMedia(1100px) {
+    width: 33.33%;
+  }
+  & + .mywork-item {
+    margin-top: 0.5rem;
+    @include index.minMedia(550px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.grid-item {
+  display: flex; // Вместо float
+  position: relative;
+  width: 100%;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  &:before {
+    content: "";
+    display: block;
+    aspect-ratio: 1 / 1; // Более современная замена padding-top: 100%
+    position: relative;
+    width: 100%;
+  }
+  &.work-item {
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    .inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  .grid-item-image {
+    height: 100%;
+    height: 100%;
+    transform: scale(1.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    @include index.minMedia(550px) {
+      mix-blend-mode: multiply;
+      filter: grayscale(0);
+    }
+    @include index.minMedia(1100px) {
+      border: 0;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    z-index: 999;
+    transform: none;
+    @include index.minMedia(800px) {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    .grid-item-image {
+      filter: grayscale(0);
+      @include index.minMedia(550px) {
+        filter: grayscale(100%);
+      }
+    }
+  }
+  &:active,
+  &:focus {
+    .grid-item-image {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.work-logo {
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  img,
+  span {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    right: 0;
+    color: #fff;
+    font-size: 22px;
+    z-index: 10;
+    & + span {
+      margin-top: 1.75rem;
+    }
+  }
+}

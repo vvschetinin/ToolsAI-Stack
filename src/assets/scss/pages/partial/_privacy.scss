@@ -1,0 +1,62 @@
+@use "@scss/abstract/index";
+
+.privacy-section {
+  h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1.25;
+    @include index.minMedia(550px) {
+      font-size: 2.1rem;
+    }
+    @include index.minMedia(800px) {
+      font-size: 2.4rem;
+    }
+    @include index.minMedia(1400px) {
+      font-size: 2.7rem;
+    }
+    @media (max-height: 450px) and (orientation: landscape) {
+      font-size: 30px;
+    }
+    span {
+      text-transform: none;
+      display: block;
+      font-size: 24px;
+      @include index.minMedia(550px) {
+        font-size: 1.7rem;
+      }
+      @include index.minMedia(800px) {
+        font-size: 1.75rem;
+      }
+      @include index.minMedia(1400px) {
+        font-size: 1.85rem;
+      }
+      @media (max-height: 450px) and (orientation: landscape) {
+        font-size: 24px;
+      }
+    }
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 0.7rem;
+    @include index.minMedia(550px) {
+      font-size: 1.7rem;
+    }
+    @include index.minMedia(800px) {
+      font-size: 1.75rem;
+    }
+    @include index.minMedia(1400px) {
+      font-size: 1.85rem;
+    }
+    @media (max-height: 450px) and (orientation: landscape) {
+      font-size: 24px;
+    }
+  }
+  p {
+    span {
+      color: #fff;
+      font-weight: 500;
+      padding-right: 0.5rem;
+    }
+  }
+}

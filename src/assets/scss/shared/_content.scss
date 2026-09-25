@@ -1,0 +1,27 @@
+@use "@scss/abstract/index";
+
+.content-block {
+  margin-bottom: 45px;
+  @include index.minMedia(550px) {
+    margin-bottom: 60px;
+  }
+  @include index.minMedia(1100px) {
+    margin-bottom: 70px;
+  }
+  @include index.minMedia(1400px) {
+    margin-bottom: 100px;
+  }
+}
+
+.addservice {
+  padding-top: 20px;
+  @include index.minMedia(550px) {
+    padding-top: 30px;
+  }
+  @include index.minMedia(1100px) {
+    padding-top: 50px;
+  }
+  @include index.minMedia(1400px) {
+    padding-top: 70px;
+  }
+}

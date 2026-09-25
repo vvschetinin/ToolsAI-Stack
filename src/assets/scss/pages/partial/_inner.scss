@@ -1,0 +1,24 @@
+@use "@scss/abstract/index";
+
+// .section-inner {
+//   position: relative;
+//   z-index: 1;
+//   padding-bottom: 3.75rem;
+//   @include index.minMedia(800px) {
+//     padding-bottom: 6rem;
+//   }
+// }
+
+.hero-inner {
+  padding: 180px 0 30px;
+  @include index.minMedia(550px) {
+    padding: 200px 0 30px;
+  }
+  @include index.minMedia(800px) {
+    padding: 270px 0 50px;
+  }
+  @include index.mobileLandscape {
+    height: auto;
+    padding: 200px 0 30px;
+  }
+}

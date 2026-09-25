@@ -1,0 +1,36 @@
+@use "@scss/abstract/index";
+
+section,
+.section {
+  position: relative;
+  padding-top: 1rem;
+  z-index: 1;
+}
+
+.section-type {
+  @extend section;
+  height: auto;
+  padding: 3.75rem 0;
+  @include index.minMedia(800px) {
+    padding: 6rem 0;
+  }
+}
+
+.section-inner {
+  @extend section;
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 3.75vw;
+  @include index.minMedia(800px) {
+    padding-bottom: 3vw;
+  }
+  @include index.minMedia(1400px) {
+    padding-bottom: 2vw;
+  }
+  & + .innerend {
+    padding-bottom: 3.75rem;
+    @include index.minMedia(800px) {
+      padding-bottom: 6rem;
+    }
+  }
+}

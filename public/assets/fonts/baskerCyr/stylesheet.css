@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Baskerville Cyrillic LT Std';
+    src: url('BaskervilleCyrLTStd-Incline.eot');
+    src: local('Baskerville Cyrillic LT Std Inclined'), local('BaskervilleCyrLTStd-Incline'),
+        url('BaskervilleCyrLTStd-Incline.eot?#iefix') format('embedded-opentype'),
+        url('BaskervilleCyrLTStd-Incline.woff2') format('woff2'),
+        url('BaskervilleCyrLTStd-Incline.woff') format('woff'),
+        url('BaskervilleCyrLTStd-Incline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskerville Cyrillic LT Std';
+    src: url('BaskervilleCyrLTStd-Bold.eot');
+    src: local('Baskerville Cyrillic LT Std Bold'), local('BaskervilleCyrLTStd-Bold'),
+        url('BaskervilleCyrLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BaskervilleCyrLTStd-Bold.woff2') format('woff2'),
+        url('BaskervilleCyrLTStd-Bold.woff') format('woff'),
+        url('BaskervilleCyrLTStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskerville Cyrillic LT Std';
+    src: url('BaskervilleCyrLTStd-Upright.eot');
+    src: local('Baskerville Cyrillic LT Std Upright'), local('BaskervilleCyrLTStd-Upright'),
+        url('BaskervilleCyrLTStd-Upright.eot?#iefix') format('embedded-opentype'),
+        url('BaskervilleCyrLTStd-Upright.woff2') format('woff2'),
+        url('BaskervilleCyrLTStd-Upright.woff') format('woff'),
+        url('BaskervilleCyrLTStd-Upright.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,43 @@
+@use "@scss/abstract/index";
+
+.hero-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.4s cubic-bezier(0.16, 0.43, 0, 1);
+  margin: 0;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.45);
+    mix-blend-mode: darken;
+  }
+  video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 50%;
+    display: none;
+    @include index.minMedia(800px) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+//===================== Fonts Roboto ==========================
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/roboto/Roboto-Light.woff2") format("WOFF2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/roboto/Roboto-Regular.woff2") format("WOFF2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/roboto/Roboto-Medium.woff2") format("WOFF2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+// ===================== Fonts SourceSansPro ====================
+
+@font-face {
+  font-family: "Din-2014";
+  src: url("/assets/fonts/din-2014/DIN-2014_Bold.woff") format("WOFF");
+  font-weight: 700;
+  font-display: swap;
+}
+
+// ===================== Fonts SourceSansPro ====================
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/sourcesans/WOFF2/TTF/SourceSans3-Light.ttf.woff2") format("WOFF2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/sourcesans/WOFF2/TTF/SourceSans3-Regular.ttf.woff2") format("WOFF2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/sourcesans/WOFF2/TTF/SourceSans3-Semibold.ttf.woff2") format("WOFF2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+// ===================== Fonts BaskervilleCir ====================
+
+@font-face {
+  font-family: "BaskerCir";
+  src: url("/assets/fonts/baskerCyr/BaskervilleCyrLTStd-Upright.woff2") format("WOFF2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BaskerCir";
+  src: url("/assets/fonts/baskerCyr/BaskervilleCyrLTStd-Incline.woff2") format("WOFF2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BaskerCir";
+  src: url("/assets/fonts/baskerCyr/BaskervilleCyrLTStd-Bold.woff2") format("WOFF2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+// ======================== End Fonts ========================

@@ -1,0 +1,24 @@
+@use "@scss/abstract/index";
+
+.footer-logo {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 20px;
+  display: block;
+  min-width: 110px;
+  min-width: 6.875rem;
+  width: 10.119vw;
+  max-width: 10rem;
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.16, 0.43, 0, 1);
+  transition-delay: 0.4s;
+  .svg-title {
+    font-family: "Din-2014", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    @include index.minMedia(1100px) {
+      font-size: 28px;
+    }
+  }
+}
