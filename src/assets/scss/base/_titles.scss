@@ -32,22 +32,25 @@
       font-size: 28px;
       margin-top: 0.3rem;
     }
-    &.sectorname {
-      display: block;
-      font-family: "SourceSansPro", sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      color: #18e591;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-      line-height: 1.45;
-      @include index.minMedia(550px) {
-        line-height: 1.2;
-      }
-      @include index.minMedia(800px) {
-        font-size: 1.25rem;
-      }
-    }
+  }
+}
+
+.sectorname {
+  display: block;
+  font-family: "SourceSansPro", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #18e591;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  line-height: 1.45;
+  @include index.minMedia(550px) {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    letter-spacing: 0.15px;
+  }
+  @include index.minMedia(800px) {
+    font-size: 1.35rem;
   }
 }
 

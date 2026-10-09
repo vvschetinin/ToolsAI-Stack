@@ -40,7 +40,6 @@
 .hero--small {
   height: auto;
   min-height: 47.5rem;
-  //max-height: calc(650px - 15vh);
   @include index.minMedia(1400px) {
     min-height: 52rem;
   }
@@ -137,19 +136,6 @@
     span {
       display: block;
       margin-top: 1rem;
-    }
-  }
-  p {
-    line-height: 1.43;
-    margin-bottom: 50px;
-    margin-bottom: 3.125rem;
-    font-size: 22px;
-    font-size: 1.25rem;
-    @include index.minMedia(800px) {
-      font-size: calc(28px + 0 * ((100vw - 600px) / 1080));
-    }
-    &:last-child {
-      margin: 0;
     }
   }
   a {
