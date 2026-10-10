@@ -141,30 +141,29 @@
       <main class="site-content">
         <section class="hero hero--large bg-hero">
           <figure
+            aria-label="Человек смотрит сайт на смартфоне и на мониторе компьютера"
             class="hero-media bg--cover"
-            style="background-image: url(/assets/images/hero/main-hero.webp)"
+            id="hero-figure"
             role="img"
-            aria-label="Веб-разработка и внедрение AI-инструментов в бизнес: современное производство"
-            id="hero-figure"></figure>
+            style="background-image: url(/assets/images/hero/main-hero.webp)"></figure>
           <div class="hero-container">
             <div class="hero-content">
               <p class="sectorname">Веб-разработка и экспертиза | Владлен Щетинин</p>
-              <h1 class="hero-title">
-                Цифровые инструменты для бизнеса
-                <span>Создание сайтов, контента и сервисов</span>
-              </h1>
+              <h1 class="hero-title">Цифровые инструменты для бизнеса</h1>
+              <p class="h-subtitle mb-15 mb-2--md">Создание сайтов, контента и сервисов</p>
               <div class="hero-text">
-                <p class="h2-subtitle">
+                <p class="p-subtitle">
                   Продуманные решения под конкретную задачу: от сайтов и лендингов до FAQ-ботов, калькуляторов и квизов. Работаю лично, без лишних посредников — с
                   акцентом на результат и удобство для клиента.
                 </p>
               </div>
               <div class="hero-buttons">
-                <button class="btn btn--purple js-startproject">Обсудить задачу</button>
+                <button class="btn btn--purple js-startproject" aria-controls="modal-form" aria-haspopup="dialog">Обсудить задачу</button>
                 <a class="btn btn--white" href="/services/">Посмотреть услуги</a>
               </div>
             </div>
           </div>
+
           <span class="hero-logo-circle svg" aria-hidden="true">
             <svg
               version="1.1"
@@ -353,10 +352,10 @@
                 <h2 class="h2-title deco-line mb-1 mb-0--lg mt-05">Кто я и как работаю</h2>
               </div>
               <article class="col-100">
-                <h2 class="p-article mt-15">
+                <p class="p-article mt-15">
                   <span class="display-block"><?php echo $greeting; ?></span>
                   Меня зовут Владлен Щетинин.
-                </h2>
+                </p>
                 <p>
                   Я веб-разработчик и специалист по цифровым инструментам для бизнеса. За годы практики прошёл путь от создания сайтов до разработки сервисов, которые
                   помогают компаниям понятнее коммуницировать с клиентами и автоматизировать рутинные процессы.
@@ -369,8 +368,7 @@
             </div>
             <div class="row mt-2 element-animation-up">
               <article class="col-100">
-                <h2 class="h2-title">Мой подход:</h2>
-                <!-- Сократили список до самых убойных пунктов -->
+                <h3 class="h2-title">Мой подход:</h3>
                 <ul class="competences-list mt-1 mb-2">
                   <li>Сначала задача бизнеса — потом инструмент</li>
                   <li>Понятная структура и удобство для пользователя</li>
@@ -378,26 +376,26 @@
                 </ul>
                 <p>
                   Хотите узнать больше обо мне и принципах работы?
-                  <a href="/pages/about/" class="hover-link">Читать подробнее</a>
+                  <a class="hover-link display-inline-block pl-05" href="/about/">Подробнее обо мне и принципах работы</a>
                   .
                 </p>
               </article>
-              <article class="telegram-info col-100 mt-2">
-                <h2 class="p-article mb-0">
-                  <span class="font-middle display-block color-white pb-05">Хотите получать практические материалы по автоматизации и веб-решениям?</span>
-                  В своем Telegram-канале разбираю, как с помощью ботов, лендингов, квизов и современных инструментов решать реальные задачи бизнеса: снижать нагрузку,
-                  повышать понятность предложения и получать больше заявок.
-                  <span class="display-block">
-                    <a
-                      class="display-inline-block mt-05"
-                      href="https://t.me/toolsaistack?utm_source=site&utm_medium=block&utm_campaign=main"
-                      target="_blank"
-                      rel="noopener">
-                      Подписаться на канал → t.me/toolsaistack
-                    </a>
-                  </span>
-                </h2>
-              </article>
+              <div class="col-100 mt-2">
+                <article class="telegram-info">
+                  <h2 class="p-article font-middle display-block color-white mb-05">Интересуют практические материалы по автоматизации и веб-решениям?</h2>
+                  <p>
+                    В своем Telegram-канале разбираю, как с помощью ботов, лендингов, квизов и современных инструментов решать реальные задачи бизнеса: снижать нагрузку,
+                    повышать понятность предложения и получать больше заявок.
+                  </p>
+                  <a
+                    class="display-block mt-05"
+                    href="https://t.me/toolsaistack?utm_source=site&amp;utm_medium=block&amp;utm_campaign=main"
+                    rel="noopener noreferrer"
+                    target="_blank">
+                    Подписаться на канал → t.me/toolsaistack
+                  </a>
+                </article>
+              </div>
               <div class="col-100 mt-2">
                 <article>
                   <h2 class="p-article color-white font-middle mb-0">Готовы обсудить задачу?</h2>
