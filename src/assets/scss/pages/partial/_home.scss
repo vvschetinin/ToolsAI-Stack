@@ -5,12 +5,13 @@
   text-align: center;
   display: block;
   max-width: 800px;
-  padding-top: 45px;
+  padding-top: 2rem;
+  margin-top: 0;
   @include index.minMedia(800px) {
-    padding-top: 50px;
+    padding-top: 2.5rem;
   }
   @include index.minMedia(1400px) {
-    padding-top: 0;
+    padding-top: 0.5rem;
   }
   p {
     font-family: "SourceSansPro";
