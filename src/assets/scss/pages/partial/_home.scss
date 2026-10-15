@@ -9,6 +9,9 @@
   @include index.minMedia(800px) {
     padding-top: 50px;
   }
+  @include index.minMedia(1400px) {
+    padding-top: 0;
+  }
   p {
     font-family: "SourceSansPro";
     color: #fff;

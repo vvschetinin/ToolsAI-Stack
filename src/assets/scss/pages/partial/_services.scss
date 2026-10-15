@@ -205,11 +205,13 @@
   @include index.minMedia(550px) {
     padding: 1rem 1.5rem;
   }
-  .titlecard {
+  .pricecard {
     display: block;
     font-weight: 400;
     color: #fff;
     font-size: 1.4rem;
-    padding-top: 0.7rem;
+  }
+  p + p {
+    margin-top: 0;
   }
 }
