@@ -101,7 +101,7 @@
           </a>
           <nav class="desktop-nav display-none display-table--lg" aria-label="Основная навигация">
             <ul class="menu-desktop">
-              <li class="menu-item"><a href="/pages/about/">Обо мне</a></li>
+              <li class="menu-item"><a href="/pages/about/">О себе</a></li>
               <li class="menu-item"><a href="/pages/services/">Услуги</a></li>
               <li class="menu-item"><a href="/pages/cases/">Кейсы и результаты</a></li>
               <li class="menu-item"><a href="/pages/blog/">Блог</a></li>
@@ -126,9 +126,9 @@
           <div class="header-nav--inner">
             <ul class="menu-mobil">
               <li class="menu-item"><a href="/">Главная</a></li>
+              <li class="menu-item"><a href="/pages/about/">О себе</a></li>
               <li class="menu-item"><a href="/pages/services/">Услуги</a></li>
               <li class="menu-item"><a href="/pages/cases/">Кейсы и результаты</a></li>
-              <li class="menu-item"><a href="/pages/about/">Обо мне</a></li>
               <li class="menu-item"><a href="/pages/blog/">Блог</a></li>
               <li class="menu-item"><a href="/pages/faq/">FAQ</a></li>
               <li class="menu-item"><a href="/pages/contacts/">Контакты</a></li>
@@ -147,7 +147,7 @@
               <div class="hero-text"></div>
               <div class="hero-buttons">
                 <button class="btn btn--purple js-startproject" aria-controls="modal-form" aria-haspopup="dialog">Обсудить задачу</button>
-                <a class="btn btn--white" href="/services/">Посмотреть услуги</a>
+                <a class="btn btn--white" href="/pages/services/">Посмотреть услуги</a>
               </div>
             </div>
           </div>
@@ -160,9 +160,7 @@
               y="0"
               viewBox="0 0 573.7 676.8"
               style="enable-background: new 0 0 573.7 676.8"
-              xml:space="preserve"
-              role="img"
-              aria-label="Декоративный элемент Circle сайта Владлена Щетинина - AI для бизнеса">
+              xml:space="preserve">
               <lineargradient
                 id="SVGID_1_"
                 gradientUnits="userSpaceOnUse"
@@ -256,13 +254,7 @@
             </svg>
           </span>
           <span class="hero-pattern hero-pattern--small svg" aria-hidden="true">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1680 107"
-              preserveAspectRatio="none"
-              role="img"
-              aria-label="Декоративный элемент внутренней страницы">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 107" preserveAspectRatio="none">
               <path class="pattern-highlight" d="M1205 72.71 0 17v87h1205Z" fill="#DE0030" />
               <path class="pattern-fill" d="M0 96.44 1680 0v107H0Z" fill="#1d1d1d" />
             </svg>
@@ -275,8 +267,8 @@
               <div class="col-100 col-lg-35 col-xl-25">
                 <h2 class="h2-title deco-line mb-1 mb-0--lg">Вопросы и ответы (FAQ)</h2>
               </div>
-              <article class="col-100 col-lg-65 col-xl-75">
-                <h2 class="p-article">Ответы на вопросы о разработке сайтов и цифровых решениях</h2>
+              <article class="col-100 col-lg-65 col-xl-75" aria-labelledby="faq-heading">
+                <p class="p-article color-white font-middle">Ответы на вопросы о разработке сайтов и цифровых решениях</p>
                 <p>
                   Этот раздел поможет вам разобраться в процессе сотрудничества. Здесь я собрал информацию о сроках разработки, порядке формирования стоимости услуг и
                   технических нюансах. Ознакомьтесь с ответами, чтобы с чётким пониманием начать работу над проектом, экономя время и ресурсы.
@@ -288,7 +280,7 @@
               <article class="col-100 col-xl-80">
                 <ul class="faq-list">
                   <li>
-                    <h2 class="faq-question" tabindex="0">Как проходят этапы разработки проекта?</h2>
+                    <h3 class="faq-question" tabindex="0">Как проходят этапы разработки проекта?</h3>
                     <div class="faq-answer">
                       <p>
                         Работа строится прозрачно: от анализа ниши и составления Технического задания (ТЗ) до прототипирования, вёрстки и запуска. Вы получаете регулярные
@@ -297,7 +289,7 @@
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">Из чего складывается стоимость услуг?</h2>
+                    <h3 class="faq-question" tabindex="0">Из чего складывается стоимость услуг?</h3>
                     <div class="faq-answer">
                       <p>
                         Цена разработки зависит от функционала: нужен ли вам простой лендинг, корпоративный сайт или сложная интеграция с ботом и сервисами. Я предлагаю
@@ -306,7 +298,7 @@
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">Как учитывается специфика моего бизнеса?</h2>
+                    <h3 class="faq-question" tabindex="0">Как учитывается специфика моего бизнеса?</h3>
                     <div class="faq-answer">
                       <p>
                         Я не использую шаблонные решения «вслепую». Перед стартом провожу анализ конкурентов, чтобы SEO-оптимизация, дизайн и контент работали именно на
@@ -315,16 +307,16 @@
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">Как работают боты и интеграция с Telegram?</h2>
+                    <h3 class="faq-question" tabindex="0">Как работают боты и интеграция с Telegram?</h3>
                     <div class="faq-answer">
                       <p>
                         Разрабатываю ботов, которые интегрируются с Telegram, сайтом и вашими CRM-системами. Это позволяет автоматизировать приём заявок круглосуточно и
-                        сбор обратной связи. Бот берёт на себя рутину, освобождая менеджеров для работы с клиентами
+                        сбор обратной связи. Бот берёт на себя рутину, освобождая менеджеров для работы с клиентами.
                       </p>
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">Есть ли гарантии и техническая поддержка?</h2>
+                    <h3 class="faq-question" tabindex="0">Есть ли гарантии и техническая поддержка?</h3>
                     <div class="faq-answer">
                       <p>
                         Да, я обеспечиваю техническую поддержку сайта после запуска. Это включает мониторинг, обновление контента и корректировку работы ботов. Я
@@ -333,7 +325,7 @@
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">На какой CMS лучше делать сайт: Битрикс или WordPress?</h2>
+                    <h3 class="faq-question" tabindex="0">На какой CMS лучше делать сайт: Битрикс или WordPress?</h3>
                     <div class="faq-answer">
                       <p>
                         Выбор зависит от масштаба. Для интернет-магазинов и сложной интеграции я рекомендую 1С-Битрикс. Для лендингов, блогов и корпоративных сайтов
@@ -342,7 +334,7 @@
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">Входит ли SEO-оптимизация в стоимость разработки?</h2>
+                    <h3 class="faq-question" tabindex="0">Входит ли SEO-оптимизация в стоимость разработки?</h3>
                     <div class="faq-answer">
                       <p>
                         Да, я делаю базовую SEO-оптимизацию по умолчанию. Это включает настройку мета-тегов, карту сайта (sitemap), файл robots.txt и обеспечение высокой
@@ -352,7 +344,7 @@
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">Можно ли доработать или обновить уже существующий сайт?</h2>
+                    <h3 class="faq-question" tabindex="0">Можно ли доработать или обновить уже существующий сайт?</h3>
                     <div class="faq-answer">
                       <p>
                         Конечно. Я провожу технический аудит текущего ресурса, нахожу «узкие места» и выполняю редизайн сайта. Это может быть как визуальное обновление,
@@ -361,7 +353,7 @@
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">Помогаете ли вы с покупкой домена и хостинга?</h2>
+                    <h3 class="faq-question" tabindex="0">Помогаете ли вы с покупкой домена и хостинга?</h3>
                     <div class="faq-answer">
                       <p>
                         Да, я беру на себя всю техническую часть: подбор надёжного хостинга, регистрацию доменного имени и установку SSL-сертификата безопасности. Вам не
@@ -370,7 +362,7 @@
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">Кто пишет тексты и готовит контент для сайта?</h2>
+                    <h3 class="faq-question" tabindex="0">Кто пишет тексты и готовит контент для сайта?</h3>
                     <div class="faq-answer">
                       <p>
                         Я предлагаю услуги профессионального копирайтинга. Подготавливаю уникальные, понятные тексты, оптимизированные под поисковые запросы и задачи
@@ -379,7 +371,7 @@
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">Работаете ли вы официально по договору?</h2>
+                    <h3 class="faq-question" tabindex="0">Работаете ли вы официально по договору?</h3>
                     <div class="faq-answer">
                       <p>
                         Обязательно. Мы заключаем официальный договор на разработку, где фиксируются сроки, стоимость и техническое задание. Я работаю официально,
@@ -388,11 +380,11 @@
                     </div>
                   </li>
                   <li>
-                    <h2 class="faq-question" tabindex="0">Почему важна скорость загрузки сайта (PageSpeed)?</h2>
+                    <h3 class="faq-question" tabindex="0">Почему важна скорость загрузки сайта (PageSpeed)?</h3>
                     <div class="faq-answer">
                       <p>
-                        Медленные сайты теряют до 40% клиентов в первые 3 секунды. Я уделяю приоритетное внимание показателям Google PageSpeed. Оптимизация изображений,
-                        кэширование и чистый код гарантируют, что ваш сайт будет быстро работать даже на мобильном интернете, что напрямую влияет на результат.
+                        Я уделяю приоритетное внимание показателям Google PageSpeed. Оптимизация изображений, кэширование и чистый код нужны, чтобы сайт быстро работал и
+                        на мобильном интернете.
                       </p>
                     </div>
                   </li>
